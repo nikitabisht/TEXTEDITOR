@@ -127,13 +127,14 @@ def update_line_numbers(event=None):
     line_number_bar.config(state='normal')
     line_number_bar.delete('1.0','end')
     line_number_bar.insert('1.0',line_numbers)
-    line_number_bar.config(state='disabled')
+    line_number_ba
+    r.config(state='disabled')
 
 #ADDING CURSOR FUNCTIONALITY
 def show_cursor():
     show_cursor_info_checked= show_cursor_info.get()
     if show_cursor_info_checked:
-        cursor_info_bar.pack(expand='no',fill=None,side='right',anchor='se')
+        cursor_info_bar.pack(expand='yes',fill=None,side='right',anchor='se')
     else:
         cursor_info_bar.pack_forgot()
 
